@@ -1,0 +1,13 @@
+<p>
+  fund-transfer works!
+</p>
+<div class="container col-lg-3" style="background-color: gray ;width: 800px;height: 250px">
+    <form #fundTransferForm="ngForm" (ngSubmit)="fundTransfer(fundTransferForm.value)">
+      <br>
+      To-Account: <input type="text" name="toAccount" ngModel class="form-control">
+      <br>
+      Amount: <input type="text" name="amount" ngModel class="form-control">
+      <br>
+      <button type="submit" class="btn btn-success">process</button>
+    </form>
+  </div>

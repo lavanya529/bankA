@@ -1,0 +1,12 @@
+<p>
+  deposite works!
+</p>
+
+<div class="container col-lg-3" style="background-color: gray ;width: 800px;height: 200px">
+  <form #depositeForm="ngForm" (ngSubmit)="deposite(depositeForm.value)">
+    <br>
+    AMOUNT: <input type="text" name="Amount" ngModel class="form-control">
+    <br>
+    <button type="submit" class="btn btn-success">submit</button>
+  </form>
+</div>

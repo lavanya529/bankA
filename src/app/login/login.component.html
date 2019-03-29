@@ -1,0 +1,13 @@
+<p>
+  login works!
+</p>
+<div class="container col-lg-3" style="background-color: gray ;width: 800px;height: 250px">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+      <br>
+      Userid: <input type="text" name=" Userid" ngModel class="form-control">
+      <br>
+      Password: <input type="text" name="Password" ngModel class="form-control">
+      <br>
+      <button type="submit" class="btn btn-success">submit</button>
+    </form>
+  </div>

@@ -1,0 +1,11 @@
+<p>
+  withdrawal works!
+</p>
+<div class="container col-lg-3" style="background-color: gray ;width: 800px;height: 200px">
+    <form #withdrawalForm="ngForm" (ngSubmit)="withdrawal(withdrawalForm.value)">
+      <br>
+      AMOUNT: <input type="text" name="Amount" ngModel class="form-control">
+      <br>
+      <button type="submit" class="btn btn-success">process</button>
+    </form>
+  </div>
